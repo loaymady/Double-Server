@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double Server</title>
+  </head>
+  <style>
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
+    * {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h2>Double Server</h2>
+
+    <table id="table" style="width: 100%">
+      <tr>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th colspan="4">Able</th>
+        <th colspan="4">Baker</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <th>ID</th>
+        <th>RN IAT</th>
+        <th>IAT</th>
+        <th>Clock</th>
+        <th>RN ST</th>
+        <th>ST Begin</th>
+        <th>ST</th>
+        <th>ST End</th>
+        <th>Idle Time</th>
+        <th>ST Begin</th>
+        <th>ST</th>
+        <th>ST End</th>
+        <th>Idle Time</th>
+        <th>QTime</th>
+        <th>TimeSpent</th>
+      </tr>
+      <tr id="row">
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td>0</td>
+        <td id="RnSt"></td>
+        <td>0</td>
+        <td id="st"></td>
+        <td id="StEndAble 0" class="true"></td>
+        <td>0</td>
+        <td></td>
+        <td></td>
+        <td id="StEndBaker 0" class="false"></td>
+        <td></td>
+        <td>0</td>
+        <td id="TimeSpent"></td>
+      </tr>
+    </table>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
